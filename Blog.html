@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="Javascript">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tech Article-Blog</title>
+    <style>
+        #blogContainer {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #blogForm {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #blogForm label {
+            margin-top: 10px;
+        }
+
+        #blogForm input,
+        #blogForm textarea {
+            margin-top: 5px;
+        }
+
+        #blogPosts {
+            margin-top: 20px;
+        }
+
+        .blogPost {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .blogPost p {
+            font-size: larger;
+            font-weight: 500;
+
+            max-width: 50%;
+            margin-top: 12px;
+            justify-content: center;
+        }
+
+        .blogPost h2 {
+            font-size: xx-large;
+            font-weight: 700;
+            padding: 2px 5px;
+            text-align: center;
+            max-width: 50%;
+        }
+
+        .blogPost img {
+            width: 665px;
+            height: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="w-full  h-28 -mt-2 leading-none">
+        <div class="bg-transparent">
+            <a class="text-white decoration-none" href="index.html">
+                <h1 class="text-xl tracking-tight ml-6 mt-2 px-15 py-5 uppercase text-black font-[Founders_Grotesk]">
+                    Tech Article
+                </h1>
+            </a>
+        </div>
+        <div class="flex ml-96 justify-end -mt-11 font-[Founders_Grotesk] text-md text-md text-black">
+            <a class="text-black  decoration-none" href="index.html">
+                <h5
+                    class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                    Home
+                </h5>
+            </a>
+            <a class="text-black  decoration-none" href="Blog.html">
+                <h5
+                    class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                    Blog
+                </h5>
+            </a>
+            <a class="text-black  decoration-none" href="Contact.html">
+                <h5
+                    class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                    Contact
+                </h5>
+            </a>
+            <a class="text-black  decoration-none" href="#">
+                <h5
+                    class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                    Login
+                </h5>
+            </a>
+        </div>
+    </div>
+    
+    <!-- blog writing -->
+    <div class="w-full h-fit leading-none bg-transparent">
+        <div id="blogContainer" class="w-full py-7 mt-6 h-3/4 bg-transparent">
+            <h1 class="text-xl text-center font-medium">My Blog</h1>
+            <form id="blogForm">
+                <label for="title">Title:</label>
+                <input class="border-2 w-full h-10 rounded-md border-red-500" type="text" id="title" required>
+                <label for="imageInput">Upload Image:</label>
+                <input type="file" id="imageInput" accept="image/*">
+                <label for="content">Content:</label>
+                <textarea id="content" class="border-2 w-full h-20 rounded-md border-red-500" required></textarea>
+                <button type="submit"
+                    class="text-xl w-1/4 h-auto mt-4 justify-center rounded-lg ml-72 boredr-2 hover:bg-red-700 border-red-500  bg-red-600 px-2 py-5">Submit</button>
+            </form>
+        </div>
+        <div id="mainPage">
+            <h1 class="text-xl font-bold text-center">Latest Blog Posts</h1>
+            <div id="blogPosts"></div>
+            <button class="text-transparent" class="delete">Delete</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

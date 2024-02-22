@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="Javascript">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tech Article-Contact</title>
+</head>
+
+<body>
+    <div class="w-full h-full bg-[url(login-bg.png)] object-cover">
+        <div class="w-full h-full">
+            <div class="w-full h-28 -mt-2 leading-none">
+                <div class="  bg-transparent">
+                    <a class="text-white decoration-none" href="index.html">
+                        <h1
+                            class="text-xl tracking-tight ml-6 mt-2 px-15 py-5 uppercase text-black font-[Founders_Grotesk]">
+                            Tech Article
+                        </h1>
+                    </a>
+                </div>
+                <div class="flex ml-96 justify-end -mt-[45px] font-[Founders_Grotesk] text-md text-md text-black">
+                    <a class="text-black  decoration-none" href="index.html">
+                        <h5
+                            class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                            Home
+                        </h5>
+                    </a>
+                    <a class="text-black  decoration-none" href="Blog.html">
+                        <h5
+                            class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                            Blog
+                        </h5>
+                    </a>
+                    <a class="text-black  decoration-none" href="#">
+                        <h5
+                            class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                            Contact
+                        </h5>
+                    </a>
+                    <a class="text-black  decoration-none" href="Login.html">
+                        <h5
+                            class="Text-md px-4 py-1 underline underline-offset-4 decoration-slate-400 hover:no-underline font-light tracking-tight leading-none ">
+                            User
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-fit">
+            <div class="flex  justify-center">
+                <form action="Contact.html" method="post">
+                    <h1 class="text-6xl leading-none mt-3 text-center
+                font-semibold text-red-700">Contact Us</h1>
+                    <div class="h-fit w-full ml-20 ">
+                        <div class="px-4  py-10">
+                            <p class="text-md">Name</p>
+                            <input class="border-2 w-96 h-10 rounded-md" type="text" placeholder="Your Name" />
+                        </div>
+                        <div class="px-4  -mt-8 py-8">
+                            <p class="text-md">Email</p>
+                            <input class="border-2 w-96 h-10 rounded-md" type="text" placeholder="Your email address"
+                                required />
+                        </div>
+                        <div class="px-4 -mt-8 py-8">
+                            <p class="text-md">Message</p>
+                            <textarea class="w-96 h-20 rounded-md border-2" name="text" id="text" cols="80" rows="40"
+                                placeholder="Your Message" required></textarea>
+
+                        </div>
+                        <button
+                            onclick="myfunction()" class="text-md  border-2 px-4 border-red-700 hover:bg-red-600  py-2 rounded-md bg-red-700 text-white ml-44 -mt-8">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myfunction(){
+            alert('Your data Submitted successfully')
+        }
+    </script>
+</body>
+
+</html>
